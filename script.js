@@ -41,4 +41,5 @@ function suiteConwaySequence(givenSequence, iteration) {
 
 suiteConwaySequence("a", 5);
 
+
 module.exports = { suiteConway, suiteConwaySequence };
