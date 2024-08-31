@@ -17,3 +17,19 @@ describe("suiteConway", () => {
     expect(suiteConway("111")).toBe("31");
   });
 });
+
+describe("suiteConwaySequence", () => {
+  it("a, 0 returns empty ", () => {
+    expect(suiteConwaySequence("a", 0)).toBe("");
+  });
+
+  it("a, 1 returns 1a", () => {
+    expect(suiteConwaySequence("a", 1)).toBe("1a\n");
+  });
+
+  it("a, 5 returns 1a111a311a13211a111312211a", () => {
+    expect(suiteConwaySequence("a", 5)).toBe(
+      "1a\n111a\n311a\n13211a\n111312211a\n"
+    );
+  });
+});
